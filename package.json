@@ -16,6 +16,7 @@
     "prepare": "husky install",
     "release": "semantic-release",
     "bundle-install": "cd example && bundle install",
+    "postinstall": "tsc --project tsconfig.build.json",
     "pod-install": "cd example/ios && bundle exec pod install",
     "bootstrap": "yarn --cwd example && yarn && yarn bundle-install && yarn pod-install"
   },
